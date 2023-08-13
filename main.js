@@ -35,10 +35,7 @@ function temperature() {
         let Kelvin = Number.parseInt(inputValue) + 273.15
         result.innerHTML = Kelvin.toFixed(3) + " K"
     }
-    else if (type1.value == "celcius" && type2.value == "rankine") {
-        let Rankine = Number.parseInt(inputValue) * (9 / 5) + 491.67
-        result.innerHTML = Rankine.toFixed(3) + " R"
-    }
+    
     else if (type1.value == "fahrenheit" && type2.value == "celcius") {
         let Celcius = Number.parseInt(inputValue) - 32 * (5 / 9)
         result.innerHTML = Celcius.toFixed(3) + ` &deg;C`
@@ -51,10 +48,7 @@ function temperature() {
         let Kelvin = Number.parseInt(inputValue) - 32 * (5 / 9) + 273.15
         result.innerHTML = Kelvin.toFixed(3) + " K"
     }
-    else if (type1.value == "fahrenheit" && type2.value == "rankine") {
-        let Rankine = Number.parseInt(inputValue) + 459.67
-        result.innerHTML = Rankine.toFixed(3) + " R"
-    }
+   
     else if (type1.value == "kelvin" && type2.value == "celcius") {
         let Celcius = Number.parseInt(inputValue) - 273.15
         result.innerHTML = Celcius.toFixed(3) + ` &deg;C`
@@ -67,8 +61,5 @@ function temperature() {
         let Kelvin = Number.parseInt(inputValue) * 1
         result.innerHTML = Kelvin.toFixed(3) + " K"
     }
-    else if (type1.value == "kelvin" && type2.value == "rankine") {
-        let Rankine = Number.parseInt(inputValue) * 1.8
-        result.innerHTML = Rankine.toFixed(3) + " R"
-    }
+   
 }
